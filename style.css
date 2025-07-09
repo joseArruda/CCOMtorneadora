@@ -1,0 +1,118 @@
+*{
+    margin: 0;
+    padding: 0;
+    outline: 0;
+    border: none;
+    text-decoration: none;
+    box-sizing: border-box;
+}
+
+html{
+    font-family: "Roboto", sans-serif;
+    background-color: rgb(241, 241, 241);
+}
+
+header{
+    width: 100%;
+    height: 6rem;
+    background-color: rgba(000, 000, 000, 0.3);
+    position: fixed;
+}
+
+.container-navbar{
+    margin: 0 auto;
+    width: 100%;
+    height: 6rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.logo-header{
+    margin: 0.5rem;
+    position: absolute;
+}
+
+.logo-header img{
+    width: 130px;
+    border-radius: 5px;
+}
+
+.container-option{
+
+}
+
+.nav-bar{
+    width: 900px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.btn-nav-bar{
+    color: rgb(255, 255, 255);
+    font-size: 21px;
+    font-weight: 300;
+    transition: all 0.1s linear;
+}
+
+.btn-nav-bar:hover{
+    font-weight: 400;
+}
+
+
+/*Inicio*/
+
+.container-inicio{
+    background: url(image/solda.jpg);
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    height: 100vh;
+}
+
+.container-inicio .inicio{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    text-align: start;
+    height: 100vh;
+    padding-left: 4rem;
+}
+
+.container-inicio .inicio .frase-empresa{
+    font-size: 35px;
+    color: #ffffff;
+    width: 600px;
+    background-color: rgba(000, 000, 000, 0.2);
+    border-radius: 15px;
+    padding: 0.5rem;
+    margin: 2rem 0;
+}
+
+.btn-orcamento{
+    background-color: #fff;
+    padding: 1rem 2rem;
+    border-radius: 5px;
+    width: 11rem;
+    color: #000000;
+    font-size: 18px;
+    transition: all 0.5s ease;
+    margin: 0 auto;
+    font-size: 20px;
+    text-transform: uppercase;
+}
+
+.btn-orcamento:hover{
+    color: #FFF;
+    background-color: #000;
+}
+
+/*Sobre nós*/
+
+.sobre-nos{
+    height: 100vh;
+}
+
+.container-sobre{
+
+}
