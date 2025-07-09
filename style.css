@@ -5,6 +5,7 @@
     border: none;
     text-decoration: none;
     box-sizing: border-box;
+    transition: 0.2s linear;
 }
 
 html{
@@ -28,7 +29,10 @@ header{
     justify-content: space-around;
 }
 
-.logo-header{
+.logo{
+    background: url(imagens/logo1.jpg);
+    height: 60px;
+    width: 60px;
     margin: 0.5rem;
     position: absolute;
 }
@@ -36,10 +40,6 @@ header{
 .logo-header img{
     width: 130px;
     border-radius: 5px;
-}
-
-.container-option{
-
 }
 
 .nav-bar{
@@ -63,7 +63,7 @@ header{
 /*Inicio*/
 
 .container-inicio{
-    background: url(image/solda.jpg);
+    background: url(imagens/solda.jpg);
     background-size: cover;
     background-position: center;
     width: 100%;
@@ -91,20 +91,81 @@ header{
 
 .btn-orcamento{
     background-color: #fff;
-    padding: 1rem 2rem;
+    padding: 1rem 1rem;
     border-radius: 5px;
-    width: 11rem;
+    width: 14.5rem;
     color: #000000;
-    font-size: 18px;
     transition: all 0.5s ease;
     margin: 0 auto;
-    font-size: 20px;
+    font-size: 18px;
     text-transform: uppercase;
+    display: inline-block;
 }
 
 .btn-orcamento:hover{
     color: #FFF;
     background-color: #000;
+    transform: scale(1.05);
+}
+
+/*Pilares*/
+
+.pilares{
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.resultados-texto{
+    color: #000;
+    font-size: 35px;
+    margin: 3rem 0;
+    text-transform: uppercase;
+    font-weight: 600;
+    text-align: center;
+    opacity: 1;
+}
+
+.resultados-texto span{
+    color: #000768;
+    display: inline-block;
+}
+
+.resultados-texto span:hover{
+    transform: scale(1.05);
+}
+
+.diferenciais{
+    display: flex;
+    max-width: 1500px;
+    margin: 0 auto;
+}
+
+.diferencial{
+    width: 350px;
+    border-radius: 10px;
+    margin: 1rem 3rem;
+    cursor: pointer;
+}
+
+.diferencial:hover{
+    transform: translateY(-8px);
+}
+
+.diferencial h2{
+    font-size: 32px;
+    text-align: center;
+    padding: 1rem 0;
+    border-bottom: 3px solid #000768;
+}
+
+
+.diferencial p{
+    text-align: center;
+    font-size: 18px;
+    padding: 0 10px;
+    padding: 1rem;
 }
 
 /*Sobre nós*/
