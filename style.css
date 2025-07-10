@@ -198,13 +198,20 @@ header{
 /*Sobre nós*/
 
 .sobre-nos{
-    height: 50rem;
+    height: 60rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background: url(imagens/logo001.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
 }
 
 .sobre-nos h2{
     color: #000;
-    font-size: 42px;
-    margin: 3rem 0;
+    font-size: 62px;
+    padding-bottom: 7rem;
     text-transform: uppercase;
     font-weight: 600;
     text-align: center;
@@ -218,7 +225,6 @@ header{
     display:flex ;
     align-items: center;
     height: 30rem;
-    background-color: rgb(240, 240, 240);
     padding: 0 2rem;
 }
 
@@ -235,13 +241,43 @@ header{
 
 
 .sobre-nos .container-sobre .sobre-text{
-    width: calc(100% - 100vh);
-    height: 50vh;
+    width: 90rem;
+    height: 40rem;
+    background-color: rgba(000, 000, 000, 0.5);
+    border-radius: 10px;
+    margin: 0 auto;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 30px;
+}
+
+.sobre-nos .container-sobre .sobre-text p{
+    color: #fff;
     padding: 30px;
     line-height: 25px;
     font-size: 21px;
     text-align: justify;
-    font-weight: 400;
+    font-weight: 200;
+}
+
+.btn-saber-mais{
+    background-color: #fff;
+    color: #000;
+    border-radius: 5px;
+    width: 16rem;
+    height: 2.5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+}
+
+.btn-saber-mais:hover{
+    border: 2px solid rgba(255, 255, 255, 0.3);
+    background-color: rgba(000, 000, 000, 0.1);
+    color: #fff;
 }
 
 /*Serviços*/
@@ -249,16 +285,17 @@ header{
 .card-service{
     width: 26rem;
     height: 25rem;
-    background-color: #e0e0e0;
+    background-color: #ffffff;
     border-radius: 5px;
     color: #000000;
     text-align: center;
     transition: all 0.2s linear;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
 }
 
 .card-service:hover{
     background-color: #f1f1f1;
-    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    box-shadow: none;
 }
 
 .card-image{
@@ -285,7 +322,11 @@ header{
 
 .servicos{
     width: 1800px;
+    height: 60rem;
     margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
 
 .container-servicos{
@@ -294,6 +335,7 @@ header{
     grid-template-columns: repeat(auto-fit, minmax(26rem, 1fr));
     gap: 1rem;
     place-items: center;
+    margin-bottom: 6rem;
 }
 
 .servicos h2{
@@ -303,6 +345,7 @@ header{
     text-transform: uppercase;
     font-weight: 600;
     text-align: center;
+    margin-bottom: 120px;
 }
 
 .servicos h2 span{
@@ -325,7 +368,7 @@ header{
     padding: 13px 0;
     margin: 5px 15px 5px;
     border-radius: 30px;
-    background-color: #5f5f5f;
+    background-color: #000000;
 }
 
 .saber-mais:hover{
@@ -333,4 +376,129 @@ header{
     color: #000;
     font-weight: 500;
     border: 1px solid rgba(000, 000, 000, 0.3);
+}
+
+
+/*Footer*/
+
+.footer{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background: url(imagens/le-trung-IOnX2aen4jY-unsplash.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+}
+
+.solicitar-orcamento{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding-bottom: 100px;
+}
+
+.solicitar-orcamento .titulo-footer{
+    color: #fff;
+    font-weight: 300;
+    font-size: 36px;
+    padding-bottom: 50px;
+}
+
+.solicitar-orcamento .mensagem-footer{
+    color: #fff;
+    width: 800px;
+    line-height: 25px;
+    font-size: 18px;
+    font-weight: 200;
+}
+
+.btn-novo{
+    padding: 10px 5px;
+    margin-top: 25px;
+}
+
+.contatos-footer{
+    border-top: 1px solid rgba(255, 255, 255, 0.3);
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
+    place-items: center;
+    padding-top: 50px;
+    color: #fff;
+    width: 1500px;
+    align-items: center;
+    
+}
+
+.logo-footer img{
+    width: 20rem;
+    height: auto;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.logo-footer img:hover{
+    background-color: #fff;
+
+}
+
+.trabalhe-conosco, .contatos, .logo-footer img{
+    width: 18rem;
+    height: 11rem;
+    text-align: center;
+    
+    padding: 10px;
+    border-radius: 10px;
+}
+
+.logo-footer img{
+    background-color: rgba(255, 255, 255, 0.3);
+}
+
+.trabalhe-conosco h4, .contatos h4{
+    margin-bottom: 40px;
+    font-size: 24px;
+    font-weight: 400;
+    text-transform: uppercase;
+    color: #ffffff;
+    padding-top: 5px;
+}
+
+.trabalhe-conosco a{
+    color: #fff;
+    font-size: 18px;
+    padding: 3px 5px;
+    border-radius: 5px;
+    display: inline-block;
+}
+
+.trabalhe-conosco a:hover{
+    transform: scale(1.1);
+}
+
+.contatos .links{
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+}
+
+.contatos .links .insta:hover{
+    background-color: rgb(179, 0, 0);
+    border-radius: 10px;
+    transform: scale(1.05);
+}
+
+.contatos .links .face:hover{
+    background-color: rgb(0, 110, 253);
+    border-radius: 10px;
+    transform: scale(1.05);
+}
+
+.contatos .links .what:hover{
+    background-color: rgb(0, 216, 0);
+    border-radius: 10px;
+    transform: scale(1.05);
 }
