@@ -5,12 +5,13 @@
     border: none;
     text-decoration: none;
     box-sizing: border-box;
-    transition: 0.2s linear;
+    scroll-behavior: smooth;
+    transition: all 0.2s ease;
 }
 
 html{
     font-family: "Roboto", sans-serif;
-    background-color: rgb(241, 241, 241);
+    background-color: rgb(255, 255, 255);
 }
 
 header{
@@ -52,12 +53,31 @@ header{
     color: rgb(255, 255, 255);
     font-size: 21px;
     font-weight: 300;
-    transition: all 0.1s linear;
+    padding: 0.2rem;
+    position: relative;
+}
+
+.btn-nav-bar::after{
+    content: '';
+    height: 2px;
+    width: 0;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    background-color: #ffffff;
+    transition: width 0.5s ease;
 }
 
 .btn-nav-bar:hover{
     font-weight: 400;
 }
+
+
+.btn-nav-bar:hover::after{
+    width: 100%;
+
+}
+
 
 
 /*Inicio*/
@@ -147,19 +167,26 @@ header{
     border-radius: 10px;
     margin: 1rem 3rem;
     cursor: pointer;
+    text-align: center;
 }
 
 .diferencial:hover{
     transform: translateY(-8px);
 }
 
+.diferencial img{
+    width: 60px;
+    text-align: center;
+    padding-bottom: 10px;
+}
+
 .diferencial h2{
-    font-size: 32px;
+    font-size: 28px;
     text-align: center;
     padding: 1rem 0;
     border-bottom: 3px solid #000768;
+    text-transform: uppercase;
 }
-
 
 .diferencial p{
     text-align: center;
@@ -171,9 +198,139 @@ header{
 /*Sobre nós*/
 
 .sobre-nos{
-    height: 100vh;
+    height: 50rem;
 }
 
-.container-sobre{
+.sobre-nos h2{
+    color: #000;
+    font-size: 42px;
+    margin: 3rem 0;
+    text-transform: uppercase;
+    font-weight: 600;
+    text-align: center;
+}
 
+.sobre-nos h2 span{
+    color: #000768;
+}
+
+.sobre-nos .container-sobre{
+    display:flex ;
+    align-items: center;
+    height: 30rem;
+    background-color: rgb(240, 240, 240);
+    padding: 0 2rem;
+}
+
+.sobre-nos .container-sobre .imagem img{
+    width: auto;
+    height: 50vh;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.sobre-nos .container-sobre .imagem img:hover{
+    transform: scale(1.02);
+}
+
+
+.sobre-nos .container-sobre .sobre-text{
+    width: calc(100% - 100vh);
+    height: 50vh;
+    padding: 30px;
+    line-height: 25px;
+    font-size: 21px;
+    text-align: justify;
+    font-weight: 400;
+}
+
+/*Serviços*/
+
+.card-service{
+    width: 26rem;
+    height: 25rem;
+    background-color: #e0e0e0;
+    border-radius: 5px;
+    color: #000000;
+    text-align: center;
+    transition: all 0.2s linear;
+}
+
+.card-service:hover{
+    background-color: #f1f1f1;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+
+.card-image{
+    width: 26rem;
+    height: 17rem;
+    overflow: hidden;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+}
+
+.image-card{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    cursor: pointer;
+    transition: transform 0.4s ease;
+}
+
+
+.image-card:hover {
+    transform: scale(1.1);
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+
+.servicos{
+    width: 1800px;
+    margin: 0 auto;
+}
+
+.container-servicos{
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(26rem, 1fr));
+    gap: 1rem;
+    place-items: center;
+}
+
+.servicos h2{
+    color: #000;
+    font-size: 42px;
+    margin: 3rem 0;
+    text-transform: uppercase;
+    font-weight: 600;
+    text-align: center;
+}
+
+.servicos h2 span{
+    color: #000768;
+}
+
+.servicos-items{
+    font-size: 24px;
+    text-transform: uppercase;
+    padding: 15px 0;
+}
+
+.saber-mais{
+    color: #ffffff;
+    text-transform: uppercase;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 400;
+    padding: 13px 0;
+    margin: 5px 15px 5px;
+    border-radius: 30px;
+    background-color: #5f5f5f;
+}
+
+.saber-mais:hover{
+    background-color: #ffffff;
+    color: #000;
+    font-weight: 500;
+    border: 1px solid rgba(000, 000, 000, 0.3);
 }
