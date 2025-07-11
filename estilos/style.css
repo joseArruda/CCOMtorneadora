@@ -31,7 +31,7 @@ header{
 }
 
 .logo{
-    background: url(imagens/logo1.jpg);
+    background: url(/imagens/logo001.png);
     height: 60px;
     width: 60px;
     margin: 0.5rem;
@@ -83,7 +83,7 @@ header{
 /*Inicio*/
 
 .container-inicio{
-    background: url(imagens/solda.jpg);
+    background: url(/imagens/solda.jpg);
     background-size: cover;
     background-position: center;
     width: 100%;
@@ -150,6 +150,7 @@ header{
 .resultados-texto span{
     color: #000768;
     display: inline-block;
+    cursor: default;
 }
 
 .resultados-texto span:hover{
@@ -166,7 +167,7 @@ header{
     width: 350px;
     border-radius: 10px;
     margin: 1rem 3rem;
-    cursor: pointer;
+    cursor: default;
     text-align: center;
 }
 
@@ -202,7 +203,7 @@ header{
     display: flex;
     flex-direction: column;
     justify-content: center;
-    background: url(imagens/logo001.png);
+    background: url(/imagens/logo001.png);
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -219,6 +220,12 @@ header{
 
 .sobre-nos h2 span{
     color: #000768;
+    display: inline-block;
+    cursor: default;
+}
+
+.sobre-nos h2 span:hover{
+    transform: scale(1.05);
 }
 
 .sobre-nos .container-sobre{
@@ -386,7 +393,7 @@ header{
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    background: url(imagens/le-trung-IOnX2aen4jY-unsplash.jpg);
+    background: url(/imagens/le-trung-IOnX2aen4jY-unsplash.jpg);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -441,8 +448,7 @@ header{
 }
 
 .logo-footer img:hover{
-    background-color: #fff;
-
+    background-color: #e2e2e2;
 }
 
 .trabalhe-conosco, .contatos, .logo-footer img{
