@@ -1,0 +1,69 @@
+*{
+    margin: 0;
+    padding: 0;
+    outline: 0;
+    border: none;
+    text-decoration: none;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+    transition: all 0.2s ease;
+}
+
+html{
+    font-family: "Roboto", sans-serif;
+    background: #adadad;
+    background: radial-gradient(circle,rgba(173, 173, 173, 1) 0%, rgba(232, 232, 232, 1) 27%, rgba(255, 255, 255, 1) 47%, rgba(189, 189, 189, 1) 64%, rgba(230, 230, 230, 1) 100%);
+}
+
+.imagem-setor{
+    background: url(/imagens/usinagem.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 60vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.imagem-setor h2{
+    color: #fff;
+    font-size: 56px;
+    font-weight: 200;
+}
+
+.container-setores .voltar{
+    background-color: #000768;
+    width: 6rem;
+    height: 1.5rem;
+    position: absolute;
+    top: 3rem;
+    left: 5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #000;
+    font-size: 16px;
+    text-transform: uppercase;
+    font-weight: 600;
+    color: #fff;
+    border-radius: 3px;
+}
+
+.container-setores .voltar:hover{
+    background-color: #fff;
+    color: #000;
+    border: 1px solid rgba(000, 000, 000, 0.2);
+}
+
+.especializacoes-setor{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 5rem;
+}
+
+.especializacoes-setor ul li{
+    list-style-type: none;
+}
