@@ -296,7 +296,7 @@ header{
 }
 
 .servicos h2{
-    color: #fff;
+    color: #ffffff;
     text-align: center;
     font-size: 42px;
     text-transform: uppercase;
@@ -304,6 +304,15 @@ header{
     margin-bottom: -120px;
     position: relative;
     z-index: 2;
+    cursor: default;
+}
+
+.servicos h2 span{
+    color: #ffffff;
+}
+
+.servicos h2 span{
+    transform: scale(1.1);
 }
 
 .container-secundario{
