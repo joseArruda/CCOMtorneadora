@@ -10,52 +10,64 @@
 }
 
 html{
-    font-family: "Roboto", sans-serif;
-    background-color: rgb(255, 255, 255);
-}
-
-header{
-    width: 100%;
-    height: 6rem;
-    background-color: rgba(000, 000, 000, 0.3);
-    position: fixed;
-    z-index: 99;
+    font-family: "Montserrat", sans-serif;
+    background: radial-gradient(
+    circle at center,
+    #ffffff 0%,       /* centro bem claro */
+    #e6f0f7 40%,      /* azul clarinho */
+    #c8d9e6 70%,      /* azul mais acinzentado */
+    #b0c4d6 90%       /* bordas azuladas suaves */
+    );
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    height: 100vh;
+    margin: 0;
 }
 
 .container-navbar{
+    position: fixed;
+    height: 6rem;
+    background-color: rgba(000, 000, 000, 0.3);
     margin: 0 auto;
-    width: 100%;
+    width: 100vw;
     height: 6rem;
     display: flex;
     align-items: center;
     justify-content: space-around;
+    z-index: 99;
 }
 
-.logo{
-    background: url(/imagens/logo001.png);
-    height: 60px;
-    width: 60px;
-    margin: 0.5rem;
+.container-navbar .logo-empresa{
+    width: 7rem;
+    height: auto;
+    background-color: #fff;
+    border-radius: 3px;
     position: absolute;
+    left: 50px;
+    top: 15px;
+    cursor: pointer;
+    transition: 0.2s ease-in-out;
 }
 
-.logo-header img{
-    width: 130px;
-    border-radius: 5px;
+.container-navbar .logo-empresa:hover{
+    transform: scale(1.05);
 }
 
 .nav-bar{
-    width: 900px;
+    width: 100%;
+    height: 6rem;
     display: flex;
+    align-items: center;
     justify-content: space-between;
 }
 
 .btn-nav-bar{
     color: rgb(255, 255, 255);
     font-size: 21px;
-    font-weight: 300;
+    font-weight: 400;
     padding: 0.2rem;
     position: relative;
+    margin: 0 3rem;
 }
 
 .btn-nav-bar::after{
@@ -79,38 +91,98 @@ header{
 
 }
 
-
-
 /*Inicio*/
 
-.container-inicio{
-    background: url(/imagens/solda.jpg);
-    background-size: cover;
-    background-position: center;
-    width: 100%;
+.inicio{
     height: 100vh;
-}
-
-.container-inicio .inicio{
     display: flex;
     justify-content: center;
     flex-direction: column;
-    text-align: start;
-    height: 100vh;
-    padding-left: 4rem;
 }
 
-.container-inicio .inicio .frase-empresa{
+.container-inicio{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100vh;
+    margin: 0 auto;
+}
+
+.container-images{
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+    margin: 0 auto;
+    border-radius: 10px;
+    z-index: 1;
+}
+
+.inicio .container-images .slide{
+    position: absolute;
+    width: 100%;
+    border-radius: 10px;
+    top: 0;
+    left: 0;
+    opacity: 0;
+    transition: opacity 0.5s ease-in-out;
+    z-index: 0;
+    object-fit: cover;
+    height: 100%;
+}
+
+.container-images .slide.on{
+    opacity: 1;
+    z-index: 1;
+}
+
+.inicio button{
+    width: 30px;
+    height: 30px;
+}
+
+#back-image, #next-image{
+    background-color: transparent;
+    cursor: pointer;
+    position: absolute;
+    z-index: 3;
+    top: 50vh;
+}
+
+#back-image{
+    transform: rotate(-90deg);
+    left: 20px;
+}
+
+#next-image{
+    transform: rotate(+90deg);
+    right: 20px;
+}
+
+.frase-empresa{
     font-size: 35px;
     color: #ffffff;
     width: 600px;
-    background-color: rgba(000, 000, 000, 0.2);
+    background-color: rgba(000, 000, 000, 0.3);
     border-radius: 15px;
     padding: 0.5rem;
-    margin: 2rem 0;
+    position:absolute;
+    top: 40vh;
+    left: 90px;
+    text-align: justify;
+    z-index: 2;
 }
 
-.btn-orcamento{
+.frase-empresa h2{
+    font-family: "Montserrat", sans-serif;
+    font-weight: 300;
+}
+
+.btn-orcamento-inicio{
     background-color: #fff;
     padding: 1rem 1rem;
     border-radius: 5px;
@@ -118,12 +190,17 @@ header{
     color: #000000;
     transition: all 0.5s ease;
     margin: 0 auto;
-    font-size: 18px;
+    font-size: 16px;
     text-transform: uppercase;
     display: inline-block;
+    position: absolute;
+    font-weight: 400;
+    z-index: 3;
+    top: 65vh;
+    left: 265px;
 }
 
-.btn-orcamento:hover{
+.btn-orcamento-inicio:hover{
     color: #FFF;
     background-color: #000;
     transform: scale(1.05);
@@ -138,14 +215,18 @@ header{
     justify-content: center;
 }
 
+.container-pilares{
+    display: flex;
+    flex-direction: column;
+    height: 70vh;
+}
+
 .resultados-texto{
     color: #000;
     font-size: 35px;
-    margin: 3rem 0;
     text-transform: uppercase;
     font-weight: 600;
     text-align: center;
-    opacity: 1;
 }
 
 .resultados-texto span{
@@ -160,8 +241,11 @@ header{
 
 .diferenciais{
     display: flex;
+    justify-content: center;
+    align-items: center;
     max-width: 1500px;
     margin: 0 auto;
+    height: 90vh;
 }
 
 .diferencial{
@@ -170,10 +254,13 @@ header{
     margin: 1rem 3rem;
     cursor: default;
     text-align: center;
+    background-color: rgba(000, 000, 000, 0.3);
+    padding: 15px;
 }
 
 .diferencial:hover{
     transform: translateY(-8px);
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
 }
 
 .diferencial img{
@@ -183,11 +270,12 @@ header{
 }
 
 .diferencial h2{
-    font-size: 28px;
+    font-size: 23px;
     text-align: center;
     padding: 1rem 0;
     border-bottom: 3px solid #000768;
     text-transform: uppercase;
+    color: #fff;
 }
 
 .diferencial p{
@@ -195,6 +283,9 @@ header{
     font-size: 18px;
     padding: 0 10px;
     padding: 1rem;
+    font-weight: 300;
+    font-family: "Montserrat", sans-serif;
+    color: #fff;
 }
 
 /*Sobre nós*/
@@ -212,8 +303,8 @@ header{
 
 .sobre-nos h2{
     color: #000;
-    font-size: 62px;
-    padding-bottom: 7rem;
+    font-size: 42px;
+    padding-bottom: 8rem;
     text-transform: uppercase;
     font-weight: 600;
     text-align: center;
@@ -233,7 +324,6 @@ header{
     display:flex ;
     align-items: center;
     height: 30rem;
-    padding: 0 2rem;
 }
 
 .sobre-nos .container-sobre .imagem img{
@@ -249,8 +339,8 @@ header{
 
 
 .sobre-nos .container-sobre .sobre-text{
-    width: 90rem;
-    height: 40rem;
+    width: 30vw;
+    height: 65vh;
     background-color: rgba(000, 000, 000, 0.5);
     border-radius: 10px;
     margin: 0 auto;
@@ -263,11 +353,14 @@ header{
 
 .sobre-nos .container-sobre .sobre-text p{
     color: #fff;
-    padding: 30px;
-    line-height: 25px;
     font-size: 21px;
     text-align: justify;
-    font-weight: 200;
+    font-weight: 400;
+    font-family: "Montserrat", sans-serif;
+    width: 100%;
+    /* white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis; */
 }
 
 .btn-saber-mais{
@@ -289,91 +382,86 @@ header{
 }
 
 /*Serviços*/
-
 .servicos{
-    background: #030303;
-    background: radial-gradient(circle,rgba(3, 3, 3, 1) 0%, rgba(23, 23, 23, 1) 28%, rgba(61, 61, 61, 1) 52%, rgba(20, 20, 20, 1) 77%, rgba(0, 0, 0, 1) 100%);
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    padding: 0 30px;
 }
 
 .servicos h2{
-    color: #ffffff;
+    color: #000000;
     text-align: center;
     font-size: 42px;
     text-transform: uppercase;
-    padding-top: 120px;
-    margin-bottom: -120px;
+    margin-bottom: 40px;
     position: relative;
     z-index: 2;
     cursor: default;
 }
 
 .servicos h2 span{
-    color: #ffffff;
+    color: #000768;
 }
 
-.servicos h2 span{
-    transform: scale(1.1);
-}
-
-.container-secundario{
+.container-servicos{
     display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 100%;
-    height: 100vh;
-    margin: 0 auto;
-}
-
-.container-images-servicos{
-    position: relative;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 85vw;
-    height: 80vh;
+    width: 1500px;
+    height: 70vh;
     overflow: hidden;
+    border-radius: 20px;
+    box-sizing: 0 10px 20px rgba(0,0,0,0.2);
     margin: 0 auto;
-    border-radius: 10px;
-    border: 2px solid rgba(255, 255, 255, 0.3);
-    z-index: 1;
 }
 
-.servicos .container-images-servicos .slide{
-    position: absolute;
+.images-servicos{
+    position: relative;
+    flex: 1;
+    overflow: hidden;
+    transition: flex 0.5s ease-in-out;
+    cursor: default;
+}
+
+.images-servicos img{
     width: 100%;
-    border-radius: 10px;
-    top: 0;
-    left: 0;
+    height: 100%;
+    object-fit: cover;
+    filter: brightness(70%) contrast(90%);
+    transition: filter 0.5s ease-in-out;
+}
+
+.images-servicos:hover{
+    flex: 3;
+}
+
+.images-servicos:hover img{
+    filter: none;
+}
+
+.text-servicos{
+    position: absolute;
+    bottom: 20px;
+    left: 20px;
+    color: #fff;
+    z-index: 2;
     opacity: 0;
     transition: opacity 0.5s ease-in-out;
-    z-index: 0;
-    object-fit: cover;
-    height: 100%;
 }
 
-.container-images-servicos .slide.on{
+.images-servicos:hover .text-servicos{
     opacity: 1;
-    z-index: 1;
 }
 
-.servicos button{
-    width: 30px;
-    height: 30px;
+.text-servicos h3{
+    font-size: 42px;
+    margin-bottom: 5px;
+    font-weight: 600;
 }
 
-#back-image, #next-image{
-    background-color: transparent;
-    cursor: pointer;
-}
-
-#back-image{
-    transform: rotate(-90deg);
-    margin-left: 25px;
-}
-
-#next-image{
-    transform: rotate(+90deg);
-    margin-right: 25px;
+.text-servicos p{
+    font-size: 21px;
+    font-weight: 400;
 }
 
 
@@ -389,6 +477,7 @@ header{
     background-repeat: no-repeat;
     background-size: cover;
     height: 100vh;
+    width: 100%;
 }
 
 .solicitar-orcamento{
@@ -408,7 +497,7 @@ header{
 
 .solicitar-orcamento .mensagem-footer{
     color: #fff;
-    width: 800px;
+    max-width: 800px;
     line-height: 25px;
     font-size: 18px;
     font-weight: 200;
@@ -419,16 +508,40 @@ header{
     margin-top: 25px;
 }
 
+.btn-orcamento{
+    background-color: #fff;
+    padding: 1rem 1rem;
+    border-radius: 5px;
+    width: 14.5rem;
+    color: #000000;
+    transition: all 0.5s ease;
+    margin: 1rem auto 0;
+    font-size: 16px;
+    text-transform: uppercase;
+    display: inline-block;
+    font-weight: 400;
+}
+
+.btn-orcamento:hover{
+    color: #FFF;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    background-color: transparent;
+    transform: scale(1.03);
+}
+
+.container-footer{
+    width: 80%;
+}
+
 .contatos-footer{
     border-top: 1px solid rgba(255, 255, 255, 0.3);
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
-    place-items: center;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
     padding-top: 50px;
     color: #fff;
-    width: 1500px;
     align-items: center;
-    
+    width: 100%;
 }
 
 .logo-footer img{
@@ -519,3 +632,60 @@ header{
     padding-top: 3rem;
     border-top: 1px solid rgba(255, 255, 255, 0.3);
 }
+
+@media (max-width: 1340px) {
+    .diferenciais{
+        flex-direction: column;
+    }
+
+    .container-pilares{
+        height: 90vh;
+    }
+
+    .diferencial img{
+        display: none;
+    }
+
+    .sobre-nos .container-sobre .sobre-text p{
+    font-size: 16px;
+    }
+}
+
+@media (max-width: 1000px) {
+    .btn-nav-bar{
+        font-size: 18px;
+        margin: 0 1rem;
+    }
+
+    .sobre-nos .container-sobre .sobre-text{
+        width: 50vw;
+    }
+
+    .logo-footer{
+        display: none;
+    }
+}
+
+@media (max-width: 700px) {
+    .container-inicio .inicio .frase-empresa{
+    font-size: 25px;
+    color: #ffffff;
+    width: 350px;
+    background-color: rgba(000, 000, 000, 0.2);
+    border-radius: 15px;
+    padding: 0.5rem;
+    margin: 0.2rem 0;
+    }
+
+    .btn-saber-mais{
+        width: 9rem;
+    }
+}
+
+
+@media (max-width: 500px) {
+    .btn-nav-bar{
+        margin: 0 0.5rem;
+    }
+}
+

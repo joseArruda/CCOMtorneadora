@@ -11,8 +11,9 @@
 
 html{
     font-family: "Roboto", sans-serif;
-    background: #adadad;
-    background: radial-gradient(circle,rgba(173, 173, 173, 1) 0%, rgba(232, 232, 232, 1) 27%, rgba(255, 255, 255, 1) 47%, rgba(189, 189, 189, 1) 64%, rgba(230, 230, 230, 1) 100%);
+    background: #030303;
+    background: radial-gradient(circle,rgba(3, 3, 3, 1) 0%, rgba(23, 23, 23, 1) 28%, rgba(61, 61, 61, 1) 52%, rgba(20, 20, 20, 1) 77%, rgba(0, 0, 0, 1) 100%);
+    color: #fff;
 }
 
 @keyframes balancar {
@@ -33,7 +34,7 @@ html{
 }
 
 .container-sobre h2{
-    color: #000;
+    color: #ffffff;
     font-size: 35px;
     margin: 3rem 0;
     text-transform: uppercase;
@@ -46,7 +47,7 @@ html{
 }
 
 .container-sobre h2 span{
-    color: #000768;
+    color: #b3b3b3;
     display: inline-block;
 }
 
@@ -55,7 +56,7 @@ html{
 }
 
 .container-sobre .voltar{
-    background-color: #000768;
+    background-color: #ffffff;
     width: 6rem;
     height: 1.5rem;
     position: relative;
@@ -63,18 +64,17 @@ html{
     display: flex;
     align-items: center;
     justify-content: center;
-    color: #000;
     font-size: 16px;
     text-transform: uppercase;
     font-weight: 600;
-    color: #fff;
+    color: #000000;
     border-radius: 3px;
 }
 
 .container-sobre .voltar:hover{
-    background-color: #fff;
-    color: #000;
-    border: 1px solid rgba(000, 000, 000, 0.2);
+    background-color: transparent;
+    color: #ffffff;
+    border: 2px solid rgba(255, 255, 255, 0.3);
 }
 
 .cabecalho{
