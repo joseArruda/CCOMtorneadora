@@ -29,7 +29,7 @@ html{
 .container-sobre{
     display: flex;
     flex-direction: column;
-    width: 1200px;
+    width: 90vw;
     margin: 0 auto;
 }
 
@@ -61,6 +61,7 @@ html{
     height: 1.5rem;
     position: relative;
     top: 5rem;
+    left: 2rem;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -85,7 +86,7 @@ html{
 
 .secao1{
     display: flex;
-    gap: 5rem;
+    gap: 2rem;
     margin-top: 5rem;
 }
 
@@ -97,7 +98,7 @@ html{
 }
 
 .conteudo-sobre{
-    width: calc(1200px - 25rem - 5rem);
+    width: 90vw;
     display: flex;
     flex-direction: column;
 
@@ -112,4 +113,27 @@ html{
 .conteudo-sobre .texto{
     text-align: justify;
     line-height: 25px;
+}
+
+/*Responsividade*/
+
+@media (max-width: 1250px) {
+    .secao1{
+        flex-direction: column;
+        margin: 3rem auto;
+    }
+
+    .secao1 img{
+        display: none;
+    }
+}
+
+@media (max-width: 1000px){
+    .conteudo-sobre h3{
+    font-size: 28px;
+}
+
+.conteudo-sobre .texto{
+    font-size: 20px;
+}
 }

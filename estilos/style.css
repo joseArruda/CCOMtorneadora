@@ -13,10 +13,10 @@ html{
     font-family: "Montserrat", sans-serif;
     background: radial-gradient(
     circle at center,
-    #ffffff 0%,       /* centro bem claro */
-    #e6f0f7 40%,      /* azul clarinho */
-    #c8d9e6 70%,      /* azul mais acinzentado */
-    #b0c4d6 90%       /* bordas azuladas suaves */
+    #ffffff 0%,
+    #e6f0f7 40%,
+    #c8d9e6 70%,
+    #b0c4d6 90%
     );
     background-repeat: no-repeat;
     background-attachment: fixed;
@@ -110,22 +110,20 @@ html{
 }
 
 .container-images{
-    position: relative;
+    position: absolute;
     display: flex;
     align-items: center;
     justify-content: center;
-    width: 100vw;
+    width: 100%;
     height: 100vh;
     overflow: hidden;
     margin: 0 auto;
-    border-radius: 10px;
     z-index: 1;
 }
 
 .inicio .container-images .slide{
     position: absolute;
     width: 100%;
-    border-radius: 10px;
     top: 0;
     left: 0;
     opacity: 0;
@@ -163,41 +161,42 @@ html{
     right: 20px;
 }
 
+.container-conteudo-inicio{
+    display: flex;
+    flex-direction: column;
+    width: 40vw;
+    align-items: center;
+}
+
 .frase-empresa{
-    font-size: 35px;
-    color: #ffffff;
-    width: 600px;
+    width: 100%;
     background-color: rgba(000, 000, 000, 0.3);
     border-radius: 15px;
     padding: 0.5rem;
-    position:absolute;
-    top: 40vh;
-    left: 90px;
-    text-align: justify;
+    text-align: center;
     z-index: 2;
+    margin-bottom: 1rem;
 }
 
 .frase-empresa h2{
-    font-family: "Montserrat", sans-serif;
+    font-size: 55px;
     font-weight: 300;
+    color: #ffffff;
 }
 
 .btn-orcamento-inicio{
     background-color: #fff;
     padding: 1rem 1rem;
     border-radius: 5px;
-    width: 14.5rem;
     color: #000000;
     transition: all 0.5s ease;
     margin: 0 auto;
     font-size: 16px;
     text-transform: uppercase;
     display: inline-block;
-    position: absolute;
+    position: relative;
     font-weight: 400;
     z-index: 3;
-    top: 65vh;
-    left: 265px;
 }
 
 .btn-orcamento-inicio:hover{
@@ -249,7 +248,8 @@ html{
 }
 
 .diferencial{
-    width: 350px;
+    width: 315px;
+    height: 300px;
     border-radius: 10px;
     margin: 1rem 3rem;
     cursor: default;
@@ -264,7 +264,7 @@ html{
 }
 
 .diferencial img{
-    width: 60px;
+    width: 50px;
     text-align: center;
     padding-bottom: 10px;
 }
@@ -284,14 +284,13 @@ html{
     padding: 0 10px;
     padding: 1rem;
     font-weight: 300;
-    font-family: "Montserrat", sans-serif;
     color: #fff;
 }
 
 /*Sobre nós*/
 
 .sobre-nos{
-    height: 60rem;
+    height: 100vh;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -304,7 +303,8 @@ html{
 .sobre-nos h2{
     color: #000;
     font-size: 42px;
-    padding-bottom: 8rem;
+    position: relative;
+    top: 0rem;
     text-transform: uppercase;
     font-weight: 600;
     text-align: center;
@@ -323,7 +323,6 @@ html{
 .sobre-nos .container-sobre{
     display:flex ;
     align-items: center;
-    height: 30rem;
 }
 
 .sobre-nos .container-sobre .imagem img{
@@ -353,14 +352,10 @@ html{
 
 .sobre-nos .container-sobre .sobre-text p{
     color: #fff;
-    font-size: 21px;
+    font-size: 19px;
     text-align: justify;
     font-weight: 400;
-    font-family: "Montserrat", sans-serif;
     width: 100%;
-    /* white-space: nowrap;
-    overflow: hidden;
-    text-overflow: ellipsis; */
 }
 
 .btn-saber-mais{
@@ -393,9 +388,9 @@ html{
 .servicos h2{
     color: #000000;
     text-align: center;
-    font-size: 42px;
+    font-size: 35px;
     text-transform: uppercase;
-    margin-bottom: 40px;
+    margin-bottom: 20px;
     position: relative;
     z-index: 2;
     cursor: default;
@@ -407,7 +402,7 @@ html{
 
 .container-servicos{
     display: flex;
-    width: 1500px;
+    width: 80vw;
     height: 70vh;
     overflow: hidden;
     border-radius: 20px;
@@ -538,7 +533,6 @@ html{
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding-top: 50px;
     color: #fff;
     align-items: center;
     width: 100%;
@@ -611,7 +605,7 @@ html{
     transform: scale(1.05);
 }
 
-.contatos .links .what:hover{
+.contatos .links .what img:hover{
     background-color: rgb(0, 216, 0);
     border-radius: 10px;
     transform: scale(1.05);
@@ -633,6 +627,8 @@ html{
     border-top: 1px solid rgba(255, 255, 255, 0.3);
 }
 
+/* Responsividade */
+
 @media (max-width: 1340px) {
     .diferenciais{
         flex-direction: column;
@@ -647,7 +643,26 @@ html{
     }
 
     .sobre-nos .container-sobre .sobre-text p{
-    font-size: 16px;
+    font-size: 15px;
+    }
+
+    .container-navbar .logo-empresa{
+    width: 5rem;
+    left: 5px;
+    top: 5px;
+    }
+
+    .diferencial{
+    height: 215px;
+    margin: 1rem 1rem;
+    }
+
+    .diferencial h2{
+    padding: 0.5rem 0;
+    }
+
+    .diferencial p{
+        padding: 0.5rem;
     }
 }
 
@@ -657,6 +672,10 @@ html{
         margin: 0 1rem;
     }
 
+    .frase-empresa h2{
+        font-size: 40px;
+    }
+
     .sobre-nos .container-sobre .sobre-text{
         width: 50vw;
     }
@@ -664,28 +683,198 @@ html{
     .logo-footer{
         display: none;
     }
-}
 
-@media (max-width: 700px) {
-    .container-inicio .inicio .frase-empresa{
-    font-size: 25px;
-    color: #ffffff;
-    width: 350px;
-    background-color: rgba(000, 000, 000, 0.2);
-    border-radius: 15px;
-    padding: 0.5rem;
-    margin: 0.2rem 0;
-    }
-
-    .btn-saber-mais{
-        width: 9rem;
+    .rodape-informacoes{
+        font-size: 14px;
     }
 }
 
+@media (max-width: 768px) {
 
-@media (max-width: 500px) {
+    .btn-orcamento-inicio{
+    font-size: 14px;
+    }
+
+    .container-navbar .logo-empresa{
+        top: 5px;
+        left: auto;
+        width: 3rem;
+    }
+}
+
+@media (max-width: 630px) {
     .btn-nav-bar{
         margin: 0 0.5rem;
     }
+
+    .container-conteudo-inicio{
+        width: 60vw;
+    }
+
+    .diferencial{
+        height: 180px;
+    }
+
+    .diferencial h2{
+        font-size: 19px;
+    }
+
+    .diferencial p{
+        font-size: 16px;
+    }
+
+    .container-pilares{
+        height: 80vh;
+    }
+
+    .resultados-texto{
+        font-size: 28px;
+    }
+
+    .sobre-nos{
+        height: 100vh;
+    }
+
+    .sobre-nos .container-sobre .sobre-text{
+        width: 95vw;
+        height: 50vh;
+    }
+
+    .sobre-nos h2{
+        padding-bottom: 1rem;
+    }
+
+    .text-servicos{
+        background-color: rgba(000, 000, 000, 0.3);
+        padding: 5px;
+        border-radius: 3px;
+        left: 5px;
+    }
+
+    .text-servicos h3{
+    font-size: 17px;
+    }
+
+    .text-servicos p{
+        font-size: 13px;
+        font-weight: 400;
+    }
+
+    .solicitar-orcamento .titulo-footer{
+    font-size: 28px;
+    padding-bottom: 20px;
+    }
+
+    .solicitar-orcamento .mensagem-footer{
+    line-height: 20px;
+    font-size: 15px;
+    }
+
+    .btn-orcamento{
+    padding: 0.5rem 1rem;
+    width: 11.5rem;
+    font-size: 14px;
+    }
+
+    .trabalhe-conosco, .contatos {
+        height: 10rem;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+    }
+
+    .trabalhe-conosco h4, .contatos h4{
+    margin-bottom: 20px;
+    font-size: 16px;
+    }
+
+    .trabalhe-conosco a{
+    font-size: 14px;
+    }
+
+    .contatos .links{
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    }
+
+    .contatos .links .insta img{
+        width: 30px;
+        height: 30px;
+    }
+
+    .contatos .links .insta{
+        width: 30px;
+        height: 30px;
+    }
+
+    .contatos .links .face img{
+        width: 30px;
+        height: 30px;
+    }
+
+    .contatos .links .face{
+        width: 30px;
+        height: 30px;
+    }
+
+    .contatos .links .what img{
+        width: 30px;
+        height: 30px;
+    }
+
+    .contatos .links .what{
+        width: 30px;
+        height: 30px;
+    }
+
+    .rodape-informacoes{
+        font-size: 12px;
+    }
+
+    .contatos{
+    margin: 1rem 0;
+    }
+
+    .frase-empresa h2{
+        font-size: 30px;
+    }
+
+    .btn-orcamento-inicio{
+        width: 12rem;
+        font-size: 12px;
+        text-align: center;
+    }
 }
 
+@media (max-width: 425px) {
+    .container-navbar{
+    height: 5rem;
+    align-items: end;
+    justify-content: center;
+    }
+
+    .btn-nav-bar{
+        font-size: 14px;
+        margin: 2.5rem 0.2rem 0;
+    }
+
+    .sobre-nos h2{
+        font-size: 35px;
+        margin-bottom: 2rem;
+    }
+
+    .sobre-nos .container-sobre .sobre-text{
+    height: 65vh;
+    padding: 20px;
+    }
+
+    .diferenciais{
+        width: 95vw;
+    }
+
+    .diferencial{
+        height: 165px;
+        margin: 0.2rem 1rem;
+    }
+}
