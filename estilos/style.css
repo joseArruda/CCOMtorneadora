@@ -208,6 +208,7 @@ html{
 /*Pilares*/
 
 .pilares{
+    width: 100%;
     height: 100vh;
     display: flex;
     align-items: center;
@@ -217,7 +218,7 @@ html{
 .container-pilares{
     display: flex;
     flex-direction: column;
-    height: 70vh;
+    height: 90vh;
 }
 
 .resultados-texto{
@@ -226,6 +227,7 @@ html{
     text-transform: uppercase;
     font-weight: 600;
     text-align: center;
+    padding-top: 4rem;
 }
 
 .resultados-texto span{
@@ -240,18 +242,19 @@ html{
 
 .diferenciais{
     display: flex;
+    flex-wrap: wrap;
     justify-content: center;
     align-items: center;
     max-width: 1500px;
-    margin: 0 auto;
-    height: 90vh;
+    margin: auto;
+    height: auto;
 }
 
 .diferencial{
     width: 315px;
-    height: 300px;
+    height: 37vh;
     border-radius: 10px;
-    margin: 1rem 3rem;
+    margin: 0.5rem 2.5rem;
     cursor: default;
     text-align: center;
     background-color: rgba(000, 000, 000, 0.3);
@@ -630,12 +633,8 @@ html{
 /* Responsividade */
 
 @media (max-width: 1340px) {
-    .diferenciais{
-        flex-direction: column;
-    }
-
     .container-pilares{
-        height: 90vh;
+        height: 70vh;
     }
 
     .diferencial img{
@@ -653,16 +652,22 @@ html{
     }
 
     .diferencial{
-    height: 215px;
+    height: 22vh;
     margin: 1rem 1rem;
     }
 
     .diferencial h2{
-    padding: 0.5rem 0;
+        padding: 0.5rem 0;
+        font-size: 20px;
     }
 
     .diferencial p{
         padding: 0.5rem;
+        font-size: 17px;
+    }
+
+    .resultados-texto{
+        padding-top: 1rem;
     }
 }
 
@@ -711,24 +716,12 @@ html{
         width: 60vw;
     }
 
-    .diferencial{
-        height: 180px;
-    }
-
-    .diferencial h2{
-        font-size: 19px;
-    }
-
-    .diferencial p{
-        font-size: 16px;
-    }
-
     .container-pilares{
         height: 80vh;
     }
 
     .resultados-texto{
-        font-size: 28px;
+        font-size: 27px;
     }
 
     .sobre-nos{
@@ -869,12 +862,24 @@ html{
     padding: 20px;
     }
 
+    .container-pilares{
+        height: 90vh;
+    }
+
     .diferenciais{
         width: 95vw;
     }
 
     .diferencial{
-        height: 165px;
-        margin: 0.2rem 1rem;
+        height: 23vh;
+        margin: 0.5rem 1rem;
+    }
+
+    .diferencial h2{
+    font-size: 18px;
+    }
+
+    .diferencial p{
+        font-size: 16px;
     }
 }
