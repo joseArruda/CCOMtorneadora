@@ -257,7 +257,6 @@ html{
     margin: 0.5rem 2.5rem;
     cursor: default;
     text-align: center;
-    background-color: rgba(000, 000, 000, 0.3);
     padding: 15px;
 }
 
@@ -278,7 +277,7 @@ html{
     padding: 1rem 0;
     border-bottom: 3px solid #000768;
     text-transform: uppercase;
-    color: #fff;
+    color: #000000;
 }
 
 .diferencial p{
@@ -287,7 +286,7 @@ html{
     padding: 0 10px;
     padding: 1rem;
     font-weight: 300;
-    color: #fff;
+    color: #000000;
 }
 
 /*Sobre nós*/
