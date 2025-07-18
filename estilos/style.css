@@ -641,10 +641,6 @@ html{
         display: none;
     }
 
-    .sobre-nos .container-sobre .sobre-text p{
-    font-size: 15px;
-    }
-
     .container-navbar .logo-empresa{
     width: 5rem;
     left: 5px;
@@ -668,6 +664,10 @@ html{
     .resultados-texto{
         padding-top: 1rem;
     }
+
+    .sobre-nos .container-sobre .sobre-text{
+        width: 80vw;
+    }
 }
 
 @media (max-width: 1000px) {
@@ -678,10 +678,6 @@ html{
 
     .frase-empresa h2{
         font-size: 40px;
-    }
-
-    .sobre-nos .container-sobre .sobre-text{
-        width: 50vw;
     }
 
     .logo-footer{
@@ -725,11 +721,6 @@ html{
 
     .sobre-nos{
         height: 100vh;
-    }
-
-    .sobre-nos .container-sobre .sobre-text{
-        width: 95vw;
-        height: 50vh;
     }
 
     .sobre-nos h2{
@@ -853,6 +844,10 @@ html{
     .diferencial p{
         font-size: 13.5px;
     }
+
+    .sobre-nos .container-sobre .sobre-text p{
+        font-size: 16px;
+    }
 }
 
 @media (max-width: 425px) {
@@ -874,6 +869,7 @@ html{
 
     .sobre-nos .container-sobre .sobre-text{
     height: 65vh;
+    width: 90vw;
     padding: 20px;
     }
 
