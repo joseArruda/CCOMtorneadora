@@ -652,7 +652,7 @@ html{
     }
 
     .diferencial{
-    height: 22vh;
+    height: 30vh;
     margin: 1rem 1rem;
     }
 
@@ -872,7 +872,7 @@ html{
 
     .diferencial{
         height: 23vh;
-        margin: 0.5rem 1rem;
+        margin: 0.5rem;
     }
 
     .diferencial h2{
@@ -880,6 +880,6 @@ html{
     }
 
     .diferencial p{
-        font-size: 16px;
+        font-size: 13.5px;
     }
 }
