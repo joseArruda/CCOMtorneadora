@@ -251,8 +251,8 @@ html{
 }
 
 .diferencial{
-    width: 315px;
-    height: 30vh;
+    width: 320px;
+    height: auto;
     border-radius: 10px;
     margin: 0.5rem 2.5rem;
     cursor: default;
@@ -652,7 +652,6 @@ html{
     }
 
     .diferencial{
-    height: 30vh;
     margin: 1rem 1rem;
     }
 
@@ -707,7 +706,7 @@ html{
     }
 }
 
-@media (max-width: 630px) {
+@media (max-width: 703px) {
     .btn-nav-bar{
         margin: 0 0.5rem;
     }
@@ -862,6 +861,10 @@ html{
     padding: 20px;
     }
 
+    .sobre-nos .container-sobre .sobre-text p{
+        font-size: 14px;
+    }
+
     .container-pilares{
         height: 90vh;
     }
@@ -871,7 +874,6 @@ html{
     }
 
     .diferencial{
-        height: 23vh;
         margin: 0.5rem;
     }
 
