@@ -837,6 +837,22 @@ html{
         font-size: 12px;
         text-align: center;
     }
+
+    .diferenciais{
+        width: 95vw;
+    }
+
+    .diferencial{
+        margin: 0.5rem;
+    }
+
+    .diferencial h2{
+    font-size: 18px;
+    }
+
+    .diferencial p{
+        font-size: 13.5px;
+    }
 }
 
 @media (max-width: 425px) {
@@ -867,21 +883,5 @@ html{
 
     .container-pilares{
         height: 90vh;
-    }
-
-    .diferenciais{
-        width: 95vw;
-    }
-
-    .diferencial{
-        margin: 0.5rem;
-    }
-
-    .diferencial h2{
-    font-size: 18px;
-    }
-
-    .diferencial p{
-        font-size: 13.5px;
     }
 }
