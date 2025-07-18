@@ -297,7 +297,7 @@ html{
     display: flex;
     flex-direction: column;
     justify-content: center;
-    background: url(../imagens/logo001.png);
+    background: url(../imagens/imagens_red/logo001.png);
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -470,7 +470,7 @@ html{
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    background: url(../imagens/le-trung-IOnX2aen4jY-unsplash.jpg);
+    background: url(../imagens/imagens_red/le-trung-IOnX2aen4jY-unsplash.jpg);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
