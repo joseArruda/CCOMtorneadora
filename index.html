@@ -8,14 +8,13 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Roboto+Serif:ital,opsz,wght@0,8..144,100..900;1,8..144,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Noto+Sans:ital,wght@0,100..900;1,100..900&family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Roboto+Serif:ital,opsz,wght@0,8..144,100..900;1,8..144,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
-
+    <script src="https://unpkg.com/scrollreveal"></script>
     <link rel="icon" href="imagens/fundo-transparente.png" type="image/x-icon">
     <link rel="shortcut icon" href="imagens/fundo-transparente.png" type="image/x-icon">
     <link rel="stylesheet" href="estilos/style.css">
     <title>CCOM Torneadora</title>
 </head>
 <body>
-    
     <header>
         <div class="container-navbar">
             <img src="imagens/imagens_red/fundo-transparente.png" class="logo-empresa" alt="logo-empresa">
@@ -28,148 +27,146 @@
                     <a href="#contatos" class="btn-nav-bar">Contatos</a>
                 </nav>
             </div>
-
         </div>
     </header>
 
     <main>
+        <section class="inicio" id="inicio">
+            <div class="container-inicio">
 
-    <section class="inicio" id="inicio">
-        <div class="container-inicio">
+                <button id="back-image">
+                    <img width="30" height="30" src="https://img.icons8.com/material-sharp/ffffff/30/circled-chevron-up.png" alt="voltar"/>
+                </button>
 
-            <button id="back-image">
-                <img width="30" height="30" src="https://img.icons8.com/material-sharp/ffffff/30/circled-chevron-up.png" alt="voltar"/>
-            </button>
+                <div class="container-images">
+                    <img src="imagens/imagens_red/greg-rosenke-xoxnfVIE7Qw-unsplash.jpg" class="slide on" alt="Imagem 1">
+                    <img src="imagens/imagens_red/sven-daniel-eaanLTG7TCU-unsplash.jpg" class="slide" alt="Imagem 2">
+                    <img src="imagens/imagens_red/solda.jpg" class="slide" alt="Imagem 3">
+                    <img src="imagens/pintura.webp" class="slide" alt="Imagem 4">
+                </div>
 
-            <div class="container-images">
-                <img src="imagens/imagens_red/greg-rosenke-xoxnfVIE7Qw-unsplash.jpg" class="slide on" alt="Imagem 1">
-                <img src="imagens/imagens_red/sven-daniel-eaanLTG7TCU-unsplash.jpg" class="slide" alt="Imagem 2">
-                <img src="imagens/imagens_red/solda.jpg" class="slide" alt="Imagem 3">
-                <img src="imagens/pintura.webp" class="slide" alt="Imagem 4">
+                <div class="container-conteudo-inicio">
+                    <div class="frase-empresa">
+                        <h2 class="transicao">Resistência em cada detalhe. Solidez em cada projeto.</h2>
+                    </div>
+                    <div>
+                        <a href="#" class="btn-orcamento-inicio transicao">Solicitar Orçamento</a>
+                    </div>
+                </div>
+
+                <button id="next-image">
+                    <img width="30" height="30" src="https://img.icons8.com/material-sharp/ffffff/30/circled-chevron-up.png" alt="próximo"/>
+                </button>
+
             </div>
+        </section>
 
-            <div class="container-conteudo-inicio">
-                <div class="frase-empresa">
-                    <h2>Resistência em cada detalhe. Solidez em cada projeto.</h2>
+        <section id="pilares" class="pilares">
+            <div class="container-pilares">
+
+                <p class="resultados-texto transicao">O que nos torna <span>melhores</span></p>
+
+                <div class="diferenciais">
+                    <div class="diferencial transicao">
+                        <img src="imagens/imagens_red/pilares.png" alt="engrenagens-logo">
+                        <h2>Produção sob medida</h2>
+                        <p>Nada de padrão: aqui, a produção é sob medida, com precisão milimétrica e foco total.</p>
+                    </div>
+
+                    <div class="diferencial transicao">
+                        <img src="imagens/imagens_red/pilares.png" alt="engrenagens-logo">
+                        <h2>Alta precisão técnica</h2>
+                        <p>Detalhes que fazem a diferença: produzimos com rigor técnico e precisão milimétrica.</p>
+                    </div>
+
+                    <div class="diferencial transicao">
+                        <img src="imagens/imagens_red/pilares.png" alt="engrenagens-logo">
+                        <h2>Compromisso</h2>
+                        <p>Nosso compromisso vai além da produção: é com a sua confiança, seu tempo e seu resultado.</p>
+                    </div>
                 </div>
-                <div>
-                    <a href="#" class="btn-orcamento-inicio">Solicitar Orçamento</a>
-                </div>
+
             </div>
+        </section>
 
-            <button id="next-image">
-                <img width="30" height="30" src="https://img.icons8.com/material-sharp/ffffff/30/circled-chevron-up.png" alt="próximo"/>
-            </button>
+        <section id="sobre" class="sobre-nos">
 
-        </div>
-    </section>
+            <h2 class="transicao">Sobre <span>Nós</span></h2>
 
-    <section id="pilares" class="pilares">
-        <div class="container-pilares">
-
-            <p class="resultados-texto">O que nos torna <span>melhores</span></p>
-
-            <div class="diferenciais">
-                <div class="diferencial">
-                    <img src="imagens/imagens_red/pilares.png" alt="engrenagens-logo">
-                    <h2>Produção sob medida</h2>
-                    <p>Nada de padrão: aqui, a produção é sob medida, com precisão milimétrica e foco total.</p>
-                </div>
-
-                <div class="diferencial">
-                    <img src="imagens/imagens_red/pilares.png" alt="engrenagens-logo">
-                    <h2>Alta precisão técnica</h2>
-                    <p>Detalhes que fazem a diferença: produzimos com rigor técnico e precisão milimétrica.</p>
-                </div>
-
-                <div class="diferencial">
-                    <img src="imagens/imagens_red/pilares.png" alt="engrenagens-logo">
-                    <h2>Compromisso</h2>
-                    <p>Nosso compromisso vai além da produção: é com a sua confiança, seu tempo e seu resultado.</p>
-                </div>
-            </div>
-
-        </div>
-    </section>
-
-    <section id="sobre" class="sobre-nos">
-
-        <h2>Sobre <span>Nós</span></h2>
-
-        <div class="container-sobre">
-            <div class="sobre-text">
-                <p>Na CCom Torneadora, somos movidos pela paixão pela precisão e pelo compromisso com a excelência. Com anos
-                de experiência no setor de usinagem, nos especializamos em serviços de torno mecânico, fabricação e recuperação
-                de peças, sempre com foco na qualidade, segurança e agilidade.
-                Nosso objetivo é oferecer soluções eficientes e personalizadas para indústrias, oficinas e clientes que buscam confiabilidade
-                e desempenho em seus equipamentos. Trabalhamos com uma equipe qualificada e utilizamos máquinas modernas, garantindo acabamentos
-                de alto padrão e total conformidade com as especificações técnicas estabelecidas. Venham nos conhecer!
-                </p>
-                <a class="btn-saber-mais" href="saberMais.html">Saber mais</a>
-            </div>
-        </div>
-    </section>
-
-    <section class="servicos" id="servicos">
-        <h2>Nossos <span>Serviços</span></h2>
-        <div class="container-servicos">
-            <div class="images-servicos">
-                <img src="imagens/imagens_red/soldagem.jpg" alt="Servico-soldagem">
-                <div class="text-servicos">
-                    <h3>Soldagem</h3>
-                    <a href="soldagem.html" class="btn-servicos">Saiba mais</a>
+            <div class="container-sobre">
+                <div class="sobre-text transicao">
+                    <p>Na CCom Torneadora, somos movidos pela paixão pela precisão e pelo compromisso com a excelência. Com anos
+                    de experiência no setor de usinagem, nos especializamos em serviços de torno mecânico, fabricação e recuperação
+                    de peças, sempre com foco na qualidade, segurança e agilidade.
+                    Nosso objetivo é oferecer soluções eficientes e personalizadas para indústrias, oficinas e clientes que buscam confiabilidade
+                    e desempenho em seus equipamentos. Trabalhamos com uma equipe qualificada e utilizamos máquinas modernas, garantindo acabamentos
+                    de alto padrão e total conformidade com as especificações técnicas estabelecidas. Venham nos conhecer!
+                    </p>
+                    <a class="btn-saber-mais" href="saberMais.html">Saber mais</a>
                 </div>
             </div>
+        </section>
 
-            <div class="images-servicos">
-                <img src="imagens/imagens_red/engrenagem.jpg" alt="Servico-engrenagem">
-                <div class="text-servicos">
-                    <h3>Engrenagem</h3>
-                    <a href="engrenagem.html" class="btn-servicos">Saiba mais</a>
+        <section class="servicos" id="servicos">
+            <h2 class="transicao">Nossos <span>Serviços</span></h2>
+            <div class="container-servicos">
+                <div class="images-servicos">
+                    <img src="imagens/imagens_red/soldagem.jpg" alt="Servico-soldagem">
+                    <div class="text-servicos">
+                        <h3>Soldagem</h3>
+                        <a href="soldagem.html" class="btn-servicos">Saiba mais</a>
+                    </div>
+                </div>
+
+                <div class="images-servicos">
+                    <img src="imagens/imagens_red/engrenagem.jpg" alt="Servico-engrenagem">
+                    <div class="text-servicos">
+                        <h3>Engrenagem</h3>
+                        <a href="engrenagem.html" class="btn-servicos">Saiba mais</a>
+                    </div>
+                </div>
+
+                <div class="images-servicos">
+                    <img src="imagens/pintura.webp" alt="Servico-pintura">
+                    <div class="text-servicos">
+                        <h3>Pintura</h3>
+                        <a href="pintura.html" class="btn-servicos">Saiba mais</a>
+                    </div>
+                </div>
+
+                <div class="images-servicos">
+                    <img src="imagens/imagens_red/usinagem.jpg" alt="Servico-usinagem">
+                    <div class="text-servicos">
+                        <h3>Usinagem</h3>
+                        <a href="usinagem.html" class="btn-servicos">Saiba mais</a>
+                    </div>
                 </div>
             </div>
-
-            <div class="images-servicos">
-                <img src="imagens/pintura.webp" alt="Servico-pintura">
-                <div class="text-servicos">
-                    <h3>Pintura</h3>
-                    <a href="pintura.html" class="btn-servicos">Saiba mais</a>
-                </div>
-            </div>
-
-            <div class="images-servicos">
-                <img src="imagens/imagens_red/usinagem.jpg" alt="Servico-usinagem">
-                <div class="text-servicos">
-                    <h3>Usinagem</h3>
-                    <a href="usinagem.html" class="btn-servicos">Saiba mais</a>
-                </div>
-            </div>
-        </div>
-    </section>
+        </section>
 
     </main>
 
     <footer id="contatos" class="footer">
         <section class="container-footer">
             <div class="solicitar-orcamento">
-                <h3 class="titulo-footer">Gostaria de consultar nossos valores?</h3>
-                <p class="mensagem-footer">Transformamos ferro e aço em segurança, beleza e durabilidade para sua casa ou empresa, com pontualidade, capricho e preço justo!</p>
-                <a href="#" class="btn-orcamento btn-novo">Consultar</a>
+                <h3 class="titulo-footer transicao">Gostaria de consultar nossos valores?</h3>
+                <p class="mensagem-footer transicao">Transformamos ferro e aço em segurança, beleza e durabilidade para sua casa ou empresa, com pontualidade, capricho e preço justo!</p>
+                <a href="#" class="btn-orcamento btn-novo transicao">Consultar</a>
             </div>
 
             <div class="contatos-footer">
-                <div class="logo-footer">
+                <div class="logo-footer degrade">
                     <img src="imagens/fundo-transparente.png" alt="logo">
                 </div>
 
-                <div class="trabalhe-conosco">
+                <div class="trabalhe-conosco degrade">
                     <h4>Trabalhe Conosco</h4>
                     <a href="#">Quero emprego</a>
                 </div>
 
-                <div class="contatos">
-                    <h4>Contate-nos</h4>
-                    <div class="links">
+                <div class="contatos degrade">
+                    <h4 class="degrade">Contate-nos</h4>
+                    <div class="links degrade">
                         <a href="#" class="insta">
                             <img width="50" height="50" src="https://img.icons8.com/parakeet-line/ffffff/50/instagram-new.png" alt="instagram-new"/>
                         </a>
@@ -185,7 +182,7 @@
                 </div>
             </div>
 
-            <div class="rodape-informacoes">
+            <div class="rodape-informacoes degrade">
                 <p>&copy;2025 [PROGRAMADORES] todos os direitos reservados.</p>
                 <p>Politica Privada.</p>
             </div>

@@ -1,3 +1,4 @@
+/*Carrossel de imagens*/
 const slider = document.querySelectorAll('.slide');
 const btnBack = document.getElementById('back-image');
 const btnNext = document.getElementById('next-image');
@@ -34,3 +35,20 @@ function backSlider(){
 
 btnNext.addEventListener('click', nextSlider);
 btnBack.addEventListener('click', backSlider);
+
+/*Animações de textos*/
+    const sr = ScrollReveal({ reset: true });
+
+    sr.reveal('.transicao', {
+    duration: 1000,
+    origin: 'top',
+    distance: '20px',
+    easing: 'ease-in-out'
+    });
+
+    sr.reveal('.degrade', {
+        duration: 1000,
+        origin: 'right',
+        distance: '20px',
+        easing: 'ease-in-out'
+    })

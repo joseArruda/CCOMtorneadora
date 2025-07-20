@@ -642,6 +642,10 @@ html{
     border-top: 1px solid rgba(255, 255, 255, 0.3);
 }
 
+.transicao, .degrade{
+    visibility: hidden;
+}
+
 /* Responsividade */
 
 @media (max-width: 1340px) {
