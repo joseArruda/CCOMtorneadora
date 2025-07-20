@@ -1,0 +1,292 @@
+*{
+    margin: 0;
+    padding: 0;
+    outline: 0;
+    border: none;
+    text-decoration: none;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+    transition: all 0.2s ease;
+}
+
+html{
+    font-family: "Montserrat", sans-serif;
+    background: #fff;
+    height: 100vh;
+    margin: 0;
+}
+
+.container-principal{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0 auto;
+}
+
+.container-topo{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    height: 90vh;
+}
+
+.cabecalho-servico h1{
+    position: absolute;
+    top: 2rem;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 42px;
+    text-transform: uppercase;
+    color: #ffffff;
+}
+
+.img-servico{
+    width: 100%;
+    height: auto;
+    overflow: hidden;
+    position: absolute;
+    z-index: -1;
+}
+
+.img-servico img{
+    width: 100%;
+    height: 100%;
+}
+
+.icones-tipos-servico{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 70vw;
+    padding: 3rem 1rem;
+    align-items: center;
+    background-color: rgba(255, 255, 255, 0.1);
+    border-radius: 10px;
+    margin-top: 10rem;
+}
+
+.black{
+    background-color: rgba(0, 0, 0, 0.3);
+}
+
+.icone{
+    text-align: center;
+    width: 10rem;
+}
+
+.icone p{
+    padding-top: 10px;
+    text-transform: uppercase;
+    font-size: 14px;
+    color: #fff;
+    text-align: center;
+}
+
+/*Projetos*/
+
+.projetos{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    width: 90vw;
+    margin: 0 auto 3rem;
+    gap: 5vw;
+    height: auto;
+}
+
+.projeto-feito{
+    display: flex;
+    width: 30rem;
+    height: 15rem;
+    gap: 1rem;
+    background-color: #dbdbdb;
+    border-radius: 5px;
+}
+
+.projeto-feito img{
+    width: 15rem;
+    height: 15rem;
+    overflow: hidden;
+    border-radius: 5px;
+}
+
+.texto-servico{
+    display: flex;
+    flex-direction: column;
+    width: 15rem;
+    padding: 5px;
+}
+
+.texto-servico h3{
+    padding-bottom: 0.5rem;
+    text-transform: uppercase;
+
+}
+
+/*Footer*/
+
+.footer{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background: url(../imagens/imagens_red/le-trung-IOnX2aen4jY-unsplash.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+    width: 100%;
+}
+
+.solicitar-orcamento{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding-bottom: 100px;
+}
+
+.solicitar-orcamento .titulo-footer{
+    color: #fff;
+    font-weight: 300;
+    font-size: 36px;
+    padding-bottom: 50px;
+}
+
+.solicitar-orcamento .mensagem-footer{
+    color: #fff;
+    max-width: 800px;
+    line-height: 25px;
+    font-size: 18px;
+    font-weight: 200;
+}
+
+.btn-novo{
+    padding: 10px 5px;
+    margin-top: 25px;
+}
+
+.btn-orcamento{
+    background-color: #fff;
+    padding: 1rem 1rem;
+    border-radius: 5px;
+    width: 14.5rem;
+    color: #000000;
+    transition: all 0.5s ease;
+    margin: 1rem auto 0;
+    font-size: 16px;
+    text-transform: uppercase;
+    display: inline-block;
+    font-weight: 400;
+}
+
+.btn-orcamento:hover{
+    color: #FFF;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    background-color: transparent;
+    transform: scale(1.03);
+}
+
+.container-footer{
+    width: 80%;
+}
+
+.contatos-footer{
+    border-top: 1px solid rgba(255, 255, 255, 0.3);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    color: #fff;
+    align-items: center;
+    width: 100%;
+}
+
+.logo-footer img{
+    width: 20rem;
+    height: auto;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.logo-footer img:hover{
+    background-color: #e2e2e2;
+}
+
+.trabalhe-conosco, .contatos, .logo-footer img{
+    width: 18rem;
+    height: 11rem;
+    text-align: center;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+.logo-footer img{
+    background-color: rgba(255, 255, 255, 0.3);
+}
+
+.trabalhe-conosco h4, .contatos h4{
+    margin-bottom: 40px;
+    font-size: 24px;
+    font-weight: 400;
+    text-transform: uppercase;
+    color: #ffffff;
+    padding-top: 5px;
+}
+
+.trabalhe-conosco a{
+    color: #fff;
+    font-size: 18px;
+    padding: 3px 5px;
+    border-radius: 5px;
+    display: inline-block;
+}
+
+.trabalhe-conosco a:hover{
+    transform: scale(1.1);
+    color: #ddd;
+}
+
+.contatos{
+    margin: 3rem 0;
+}
+
+.contatos .links{
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+}
+
+.contatos .links .insta:hover{
+    background-color: rgb(179, 0, 0);
+    border-radius: 10px;
+    transform: scale(1.05);
+}
+
+.contatos .links .face:hover{
+    background-color: rgb(0, 110, 253);
+    border-radius: 10px;
+    transform: scale(1.05);
+}
+
+.contatos .links .what img:hover{
+    background-color: rgb(0, 216, 0);
+    border-radius: 10px;
+    transform: scale(1.05);
+}
+
+
+.saber-mais:hover{
+    background-color: #ffffff;
+    color: #000;
+    font-weight: 500;
+    border: 1px solid rgba(000, 000, 000, 0.3);
+}
+
+.rodape-informacoes{
+    color: #fff;
+    display: flex;
+    justify-content: space-around;
+    padding-top: 3rem;
+    border-top: 1px solid rgba(255, 255, 255, 0.3);
+}

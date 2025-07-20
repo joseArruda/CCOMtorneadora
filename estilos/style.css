@@ -456,11 +456,24 @@ html{
     font-weight: 600;
 }
 
-.text-servicos p{
-    font-size: 21px;
-    font-weight: 400;
+.btn-servicos{
+    background-color: #fff;
+    padding: 0.5rem 1rem;
+    border-radius: 3px;
+    color: #000000;
+    transition: all 0.2s ease;
+    margin: 1rem auto;
+    font-size: 14px;
+    display: inline-block;
+    font-weight: 300;
 }
 
+.btn-servicos:hover{
+    background-color: transparent;
+    color: #fff;
+    transform: scale(1.02);
+    border: 1px solid rgb(255, 255, 255, 0.3);
+}
 
 /*Footer*/
 
