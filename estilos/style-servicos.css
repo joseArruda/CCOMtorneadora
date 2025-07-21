@@ -36,7 +36,7 @@ html{
     flex-direction: column;
     align-items: center;
     width: 100%;
-    height: 90vh;
+    height: 60vh;
 }
 
 .cabecalho-servico h1{
@@ -82,7 +82,8 @@ html{
 
 .img-servico img{
     width: 100%;
-    height: 100%;
+    height: 50vh;
+    object-fit: cover;
 }
 
 .icones-tipos-servico{
@@ -104,6 +105,11 @@ html{
 .icone{
     text-align: center;
     width: 10rem;
+}
+
+.icone img{
+    width: 50px;
+    height: 50px;
 }
 
 .icone p{
@@ -338,4 +344,156 @@ html{
 
 .transicao, .degrade{
     visibility: hidden;
+}
+
+/*Responsividade*/
+
+@media (max-width: 1200px) {
+    .icones-tipos-servico{
+        width: 90vw;
+    }
+
+    .icone img{
+        width: 40px;
+        height: 40px;
+    }
+
+    .icone p{
+        font-size: 11px;
+    }
+
+    .logo-footer{
+        display: none;
+    }
+
+    .rodape-informacoes{
+        font-size: 14px;
+    }
+}
+
+@media (max-width: 710px){
+        .solicitar-orcamento .titulo-footer{
+    font-size: 28px;
+    padding-bottom: 20px;
+    }
+
+    .solicitar-orcamento .mensagem-footer{
+    line-height: 20px;
+    font-size: 15px;
+    }
+
+    .btn-orcamento{
+    padding: 0.5rem 1rem;
+    width: 11.5rem;
+    font-size: 14px;
+    }
+
+    .trabalhe-conosco, .contatos {
+        height: 10rem;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+    }
+
+    .trabalhe-conosco h4, .contatos h4{
+    margin-bottom: 20px;
+    font-size: 16px;
+    }
+
+    .trabalhe-conosco a{
+    font-size: 14px;
+    }
+
+    .contatos .links{
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    }
+
+    .contatos .links .insta img{
+        width: 30px;
+        height: 30px;
+    }
+
+    .contatos .links .insta{
+        width: 30px;
+        height: 30px;
+    }
+
+    .contatos .links .face img{
+        width: 30px;
+        height: 30px;
+    }
+
+    .contatos .links .face{
+        width: 30px;
+        height: 30px;
+    }
+
+    .contatos .links .what img{
+        width: 30px;
+        height: 30px;
+    }
+
+    .contatos .links .what{
+        width: 30px;
+        height: 30px;
+    }
+
+    .rodape-informacoes{
+        font-size: 12px;
+    }
+
+    .contatos{
+    margin: 1rem 0;
+    }
+}
+
+@media (max-width: 600px) {
+    .voltar{
+    top: 0.5rem;
+    left: 0.5rem;
+    }
+
+    .cabecalho-servico h1{
+    top: 0.5rem;
+    font-size: 38px;
+    }
+
+    .icones-tipos-servico{
+        height: 70%;
+        margin-top: 3rem;
+        flex-wrap: wrap;
+    }
+
+    .icone p{
+        font-size: 10px;
+    }
+
+
+    .icone{
+    text-align: center;
+    width: 6rem;
+    height: 6rem;
+    }
+
+
+    .projetos{
+    margin: 0 auto 1rem;
+    }
+
+    .texto-servico, .projeto-feito{
+        width: 90vw;
+    }
+
+    .texto-servico p{
+        width: 80vw;
+        font-size: 18px;
+    }
+}
+
+@media (max-width: 455px) {
+    .voltar{
+    display: none;
+    }
 }

@@ -743,13 +743,6 @@ html{
         padding-bottom: 1rem;
     }
 
-    .text-servicos{
-        background-color: rgba(000, 000, 000, 0.3);
-        padding: 5px;
-        border-radius: 3px;
-        left: 5px;
-    }
-
     .text-servicos h3{
     font-size: 17px;
     }
