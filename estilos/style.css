@@ -197,6 +197,7 @@ html{
     position: relative;
     font-weight: 400;
     z-index: 3;
+    cursor: pointer;
 }
 
 .btn-orcamento-inicio:hover{
@@ -747,11 +748,6 @@ html{
     font-size: 17px;
     }
 
-    .text-servicos p{
-        font-size: 13px;
-        font-weight: 400;
-    }
-
     .solicitar-orcamento .titulo-footer{
     font-size: 28px;
     padding-bottom: 20px;
@@ -888,5 +884,13 @@ html{
 
     .container-pilares{
         height: 90vh;
+    }
+
+    .container-servicos{
+        height: 50vh;
+    }
+
+    .text-servicos{
+        left: 5px;
     }
 }
