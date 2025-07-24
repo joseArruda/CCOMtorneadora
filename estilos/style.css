@@ -661,10 +661,13 @@ html{
         display: none;
     }
 
-    .container-navbar .logo-empresa{
-    width: 5rem;
+    .container-navbar .link-logo {
     left: 5px;
     top: 5px;
+    }
+
+    .container-navbar .link-logo img{
+    width: 5rem;
     }
 
     .diferencial{
@@ -715,9 +718,12 @@ html{
     font-size: 14px;
     }
 
-    .container-navbar .logo-empresa{
+    .container-navbar .link-logo{
         top: 5px;
         left: auto;
+    }
+
+    .container-navbar .link-logo img{
         width: 3rem;
     }
 }

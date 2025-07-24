@@ -109,11 +109,10 @@ input::-webkit-inner-spin-button {
     height: 3rem;
     border-radius: 30px;
     font-size: 16px;
-    margin-top: 1rem;
     background-color: #fff;
     color: #000;
     cursor: pointer;
-    margin-top: 8rem;
+    margin-top: 5rem;
 }
 
 .btn-submit:hover{
@@ -126,5 +125,9 @@ input::-webkit-inner-spin-button {
     .container-trabalhe{
     width: 95vw;
     height: auto;
+
+    main{
+    height: 100%;
+    }
 }
 }
