@@ -12,7 +12,7 @@
 </head>
 <body>
     <main class="container-principal">
-        <section class="container-topo">
+        <section class="container-topo" id="topo">
             <a href="index.html" class="voltar">Voltar</a>
             <div class="img-servico">
                 <div class="cabecalho-servico">
@@ -120,32 +120,27 @@
             <div class="solicitar-orcamento">
                 <h3 class="titulo-footer transicao">Gostaria de consultar nossos valores?</h3>
                 <p class="mensagem-footer transicao">Transformamos ferro e aço em segurança, beleza e durabilidade para sua casa ou empresa, com pontualidade, capricho e preço justo!</p>
-                <a href="#" class="btn-orcamento btn-novo transicao">Consultar</a>
+                <a href="#" onclick="enviar(event)" class="btn-orcamento btn-novo transicao">Consultar</a>
             </div>
 
             <div class="contatos-footer">
                 <div class="logo-footer degrade">
-                    <img src="imagens/fundo-transparente.png" alt="logo">
+                    <a href="#topo"><img src="imagens/fundo-transparente.png" alt="logo"></a>
                 </div>
 
                 <div class="trabalhe-conosco degrade">
                     <h4>Trabalhe Conosco</h4>
-                    <a href="#">Quero emprego</a>
+                    <a href="trabalhe-conosco.html">Quero emprego</a>
                 </div>
 
                 <div class="contatos degrade">
                     <h4 class="degrade">Contate-nos</h4>
                     <div class="links degrade">
-                        <a href="#" class="insta">
+                        <a href="https://www.instagram.com/torneadoraccom?utm_source=ig_web_button_share_sheet&igsh=NWt6bnQyMGxmeWVj" target="_blank" class="insta">
                             <img width="50" height="50" src="https://img.icons8.com/parakeet-line/ffffff/50/instagram-new.png" alt="instagram-new"/>
                         </a>
-                        
-                        <a href="#" class="face">
-                            <img width="50" height="50" src="https://img.icons8.com/ios/ffffff/50/facebook--v1.png" alt="facebook--v1"/>
-                        </a>
-                        
-                        <a href="#" class="what">
-                            <img width="50" height="50" src="https://img.icons8.com/ios/ffffff/50/whatsapp--v1.png" alt="whatsapp--v1"/>
+                        <a href="" class="what">
+                            <img width="50" height="50" src="https://img.icons8.com/ios/ffffff/50/whatsapp--v1.png" onclick="enviar(event)" alt="whatsapp--v1"/>
                         </a>
                     </div> 
                 </div>

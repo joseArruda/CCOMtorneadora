@@ -57,7 +57,7 @@ main{
     padding: 20px;
     border-radius: 10px;
     width: 23rem;
-    height: 60vh;
+    height: auto;
     text-align: center;
 }
 
@@ -120,4 +120,11 @@ input::-webkit-inner-spin-button {
     background: transparent;
     color: #fff;
     border: 2px solid rgba(255 , 255, 255, .3);
+}
+
+@media (max-width:400px) {
+    .container-trabalhe{
+    width: 95vw;
+    height: auto;
+}
 }

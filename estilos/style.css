@@ -37,14 +37,17 @@ html{
     z-index: 99;
 }
 
+.container-navbar .link-logo{
+    position: absolute;
+    left: 50px;
+    top: 15px;
+}
+
 .container-navbar .logo-empresa{
     width: 7rem;
     height: auto;
     background-color: #fff;
     border-radius: 3px;
-    position: absolute;
-    left: 50px;
-    top: 15px;
     cursor: pointer;
     transition: 0.2s ease-in-out;
 }

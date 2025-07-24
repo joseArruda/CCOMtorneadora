@@ -15,6 +15,17 @@
         easing: 'ease-in-out'
     })
 
+/*Botão de acessoa ao Whatsapp - Footer*/
+
+function enviar(event){
+    event.preventDefault();
+    const mensagem = "Olá, venho pelo site. Gostaria de solicitar o orçamento dos serviços disponíveis.";
+    const numero = '5561996114751';
+    const msgFormatada = encodeURIComponent(mensagem);
+    const url = `https://api.whatsapp.com/send?phone=${numero}&text=${msgFormatada}&type=phone_number&app_absent=0`;
+    window.open(url, '_blank');
+};
+
 /*Botão de acessoa ao Whatsapp - Solda */
 
 function enviarSolda(event){
