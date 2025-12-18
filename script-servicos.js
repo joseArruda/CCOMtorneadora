@@ -20,7 +20,7 @@
 function enviar(event){
     event.preventDefault();
     const mensagem = "Olá, venho pelo site. Gostaria de solicitar o orçamento dos serviços disponíveis.";
-    const numero = '5561996114751';
+    const numero = '5561982540047';
     const msgFormatada = encodeURIComponent(mensagem);
     const url = `https://api.whatsapp.com/send?phone=${numero}&text=${msgFormatada}&type=phone_number&app_absent=0`;
     window.open(url, '_blank');
@@ -31,7 +31,7 @@ function enviar(event){
 function enviarSolda(event){
     event.preventDefault();
     const mensagem = "Olá, venho pelo site. Gostaria de solicitar o orçamento dos serviços de soldagem.";
-    const numero = '5561996114751';
+    const numero = '5561982540047';
     const msgFormatada = encodeURIComponent(mensagem);
     const url = `https://api.whatsapp.com/send?phone=${numero}&text=${msgFormatada}&type=phone_number&app_absent=0`;
     window.open(url, '_blank');
@@ -42,7 +42,7 @@ function enviarSolda(event){
 function enviarUsinagem(event){
     event.preventDefault();
     const mensagem = "Olá, venho pelo site. Gostaria de solicitar o orçamento dos serviços de Usinagem.";
-    const numero = '5561996114751';
+    const numero = '5561982540047';
     const msgFormatada = encodeURIComponent(mensagem);
     const url = `https://api.whatsapp.com/send?phone=${numero}&text=${msgFormatada}&type=phone_number&app_absent=0`;
     window.open(url, '_blank');
@@ -53,7 +53,7 @@ function enviarUsinagem(event){
 function enviarPintura(event){
     event.preventDefault();
     const mensagem = "Olá, venho pelo site. Gostaria de solicitar o orçamento dos serviços de Pintura.";
-    const numero = '5561996114751';
+    const numero = '5561982540047';
     const msgFormatada = encodeURIComponent(mensagem);
     const url = `https://api.whatsapp.com/send?phone=${numero}&text=${msgFormatada}&type=phone_number&app_absent=0`;
     window.open(url, '_blank');
@@ -64,7 +64,7 @@ function enviarPintura(event){
 function enviarEngrenagem(event){
     event.preventDefault();
     const mensagem = "Olá, venho pelo site. Gostaria de solicitar o orçamento dos serviços de Engrenagem.";
-    const numero = '5561996114751';
+    const numero = '5561982540047';
     const msgFormatada = encodeURIComponent(mensagem);
     const url = `https://api.whatsapp.com/send?phone=${numero}&text=${msgFormatada}&type=phone_number&app_absent=0`;
     window.open(url, '_blank');
